@@ -35,13 +35,14 @@ header {
 .wrap img {
   width: 45vw;
   margin-top: 20px;
+  margin-left: 5vw;
 }
 
 #icon {
   display: none;
 }
 
-#icon+label {
+#icon + label {
   display: block;
   width: 30px;
   height: 20px;
@@ -50,7 +51,7 @@ header {
   bottom: 5vw;
 }
 
-#icon+label>span {
+#icon + label > span {
   position: absolute;
   display: block;
   width: 100%;
@@ -62,34 +63,34 @@ header {
   left: 85vw;
 }
 
-#icon+label>span:nth-child(1) {
+#icon + label > span:nth-child(1) {
   top: 0;
 }
 
-#icon+label>span:nth-child(2) {
+#icon + label > span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-#icon+label>span:nth-child(3) {
+#icon + label > span:nth-child(3) {
   bottom: 0;
 }
 
-#icon:checked+label>span:nth-child(1) {
+#icon:checked + label > span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 
-#icon:checked+label>span:nth-child(2) {
+#icon:checked + label > span:nth-child(2) {
   opacity: 0;
 }
 
-#icon:checked+label>span:nth-child(3) {
+#icon:checked + label > span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
 
-#icon+label+#wrap {
+#icon + label + #wrap {
   position: fixed;
   top: 0;
   right: -300%;
@@ -98,15 +99,15 @@ header {
   background: #f5f5f5;
   color: #000000;
   z-index: 1;
-  transition: right 0.3s ease;
-  /* 애니메이션 효과를 주기 위한 transition 속성 */
+  transition: right 0.3s ease; /* 애니메이션 효과를 주기 위한 transition 속성 */
 }
 
-#icon:checked+label+#wrap {
+#icon:checked + label + #wrap {
   right: 0px;
 }
 
 .head #wrap p {
+  line-height: 1.5;
   font-size: 6vw;
   padding-top: 50px;
   padding-left: 5vw;
@@ -159,10 +160,13 @@ header {
   position: relative;
   left: 50vw;
   bottom: 1vw;
+  transition: none;
+  opacity: 1;
 }
 
 .head #wrap .sub_menu {
-  display: none;
+  transition: none;
+  opacity: 0;
   background-color: #fff;
   height: 100%;
 }
@@ -1142,4 +1146,135 @@ td {
 
 .event_box {
   font-weight: bold;
+}
+
+/***** footer *****/
+.btn_top {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 23rem;
+  right: 1.5rem;
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_top img {
+  padding: 10px;
+  width: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.foot {
+  background-color: #111;
+  padding-top: 35px;
+}
+
+.foot span,
+.foot h2 {
+  color: #fff;
+}
+
+.foot span {
+  font-size: 16px;
+}
+
+.foot h2 {
+  font-size: 22px;
+  padding: 10px;
+}
+
+.foot_cloud {
+  display: flex;
+  left: 50px;
+  flex-direction: column;
+}
+
+.foot_green li {
+  display: inline-block;
+  height: 50px;
+  /* 원하는 높이 조절 */
+  border-radius: 100px;
+  /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -10px;
+}
+
+.foot_green li::before,
+.foot_green li::after {
+  content: "";
+  width: 25px;
+  /* 구름의 일부분 너비 조절 */
+  height: 25px;
+  /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e;
+  /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.foot_green li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 45px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: 20px;
+}
+
+.foot_green li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 60px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: 20px;
+}
+
+.green p {
+  position: relative;
+  bottom: 16px;
+  padding-left: 17px;
+  color: #ffffff;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.foot_info_address {
+  margin: 1rem 0;
+  color: #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+.foot_info_address p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer_copy {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_copy a {
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.footer_copy p {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  opacity: 0.5;
 }

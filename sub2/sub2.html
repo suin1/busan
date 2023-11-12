@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>(사)부산스토리텔링협의회</title>
   <!-- reset -->
-  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
   <!-- common -->
-  <link rel="stylesheet" href="./assets/common.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
   <!-- favicon -->
-  <link rel="icon" href="./assets/common_images/favicon.png">
+  <link rel="icon" href="../assets/images/favicon.png">
   <!-- plug-in -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- style -->
@@ -23,6 +23,56 @@
 </head>
 
 <body>
+      <!-- header -->
+      <header class="head">
+        <div class="wrap">
+          <img
+            src="../assets/common_images/logo.svg"
+            alt="부산스토리텔링협의회"
+          />
+          <!-- 햄버거 아이콘 -->
+          <input type="checkbox" id="icon" />
+          <label for="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <!-- 헤더 내용 -->
+          <div id="wrap">
+            <p>
+              <strong>부산 스토리텔링협의회</strong>에<br />오신걸 환영합니다!
+            </p>
+            <ul>
+              <li><a href="#" class="login">로그인</a></li>
+            </ul>
+            <ul class="big_menu">
+              <li><a href="../sub1/sub1_.html">축제안내</a></li>
+              <li><a href="#">북구 아카이브</a></li>
+              <li><a href="../sub2/sub2.html">북구 스토리 탐방대</a></li>
+              <li class="story_menu_down">
+                <a href="#"
+                  >나의 북구 이야기<img
+                    src="../assets/common_images/ic-arrow2.svg"
+                    alt="arrow"
+                    class="arrow"
+                /></a>
+                <ul class="sub_menu">
+                  <li>
+                    <a href="./sub3_1.html" title="최우수상">최우수상</a>
+                  </li>
+                  <li>
+                    <a href="./sub3_2.html" title="우수상">우수상</a>
+                  </li>
+                  <li>
+                    <a href="./sub3_3.html" title="장려상">장려상</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
   <!-- subVisual -->
   <section class="subVisual">
     <div class="visual_box">
@@ -31,7 +81,7 @@
       <div class="box">
         <h4>신청마감</h4>
         <span>2023. 10. 05 ~ 10. 24</span>
-        <a href="#" class="btn"><img src="./assets/common_images/ic-arrow-w.svg" alt="버튼"></a>
+        <a href="#" class="btn"><img src="../assets/common_images/ic-arrow-w.svg" alt="버튼"></a>
       </div>
     </div>
     <img src="./images/content/explore/ic-explore-bag.png" alt="가방">
@@ -383,6 +433,49 @@
     </a>
   </section>
 
+      <!-- footer -->
+      <footer class="foot">
+        <a href="#wrap" class="btn_top"
+          ><img src="../assets/common_images/ic-arrow.svg" alt="allow_up"
+        /></a>
+        <div class="info">
+          <span>제 10회 부산스토리텔링축제</span>
+          <h2>북구 늴리리</h2>
+          <div class="foot_cloud">
+            <div class="green">
+              <a href="#">
+                <ul class="foot_green">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </a>
+              <p>customer</p>
+            </div>
+            <div class="foot_info_address">
+              <p class="address">
+                A. 부산광역시 연제구 중앙대로 1217 국제문화센터 7층
+              </p>
+              <p class="num">T. 051-505-2030</p>
+              <p class="email">E. bsstory@storybusan.com</p>
+            </div>
+            <div class="footer_copy">
+              <a
+                href="http://busanstory.koweb.co.kr/contents/10_privacy/sub01.html "
+                title="개인정보"
+                >개인정보처리방침</a
+              >
+              <a
+                href="http://busanstory.koweb.co.kr/contents/10_privacy/sub02.html"
+                title="이용약관"
+                >이용약관</a
+              >
+              <p>Copyright ⓒ 부산스토리텔링협의회. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
   <!-- js 플러그인 -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
