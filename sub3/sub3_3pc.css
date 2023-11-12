@@ -1,0 +1,830 @@
+@charset "utf-8";
+/***** header *****/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  position: absolute;
+}
+
+.wrap img {
+  width: 15vw;
+  margin: 2vw;
+}
+
+.head .wrap #icon + label,
+.head .wrap #wrap p,
+.big_menu .story_menu_down .arrow {
+  display: none;
+}
+
+.head #wrap {
+  position: absolute;
+  left: 50%;
+}
+
+#icon + label + #wrap {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  transition: none;
+  top: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.head .wrap #wrap .login {
+  background: transparent;
+  font-size: 0.6vw;
+  text-align: center;
+  padding: 0.5vw;
+  width: 50px;
+  margin: 0;
+  color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 30px 30px;
+  font-family: var(--font-Pretendard);
+  position: absolute;
+  left: 82vw;
+  top: 2vw;
+}
+
+.head .wrap #wrap .big_menu {
+  margin-top: 10px;
+  background: transparent;
+  padding: 0;
+  border: none;
+  height: 8vh;
+  display: flex;
+  width: 60vw;
+  position: absolute;
+  left: 25vw;
+  top: 0.5vw;
+}
+
+.head .wrap #wrap .big_menu li {
+  margin-bottom: 10px;
+  padding: 1.3vw;
+  height: 3vw;
+  width: 12vw;
+  border: none;
+}
+
+.head .wrap #wrap .big_menu li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  font-size: 1vw;
+  font-family: var(--font-Pretendard);
+}
+
+.head .wrap #wrap .big_menu .story_menu_down .arrow {
+  width: 3%;
+  transform: translate(0, -50%) rotate(90deg);
+  position: relative;
+  left: 50vw;
+  bottom: 4vw;
+  opacity: 0; /* 모바일 버전에서 숨기도록 opacity 0 유지 */
+  transition: opacity 0.3s ease;
+}
+
+.head .wrap #wrap .big_menu .sub_menu {
+  opacity: 0; /* 모바일 버전에서 숨기도록 opacity 0 유지 */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  left: 46vw;
+  top: 60px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px 20px;
+  height: 9vw;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li {
+  margin: 0;
+  width: 7vw;
+  height: 1vw;
+  padding: 1vw;
+  border-bottom: 1px solid #ddd;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li:last-child {
+  border: none;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li a {
+  color: #000;
+  font-size: 1vw;
+  padding-right: 1.5vw;
+  border: none;
+}
+
+/***** section *****/
+.intro {
+  background: url(../assets/images/visual-story.jpg);
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  font-family: var(--font-PyeongChang);
+}
+
+.intro h2 {
+  position: absolute;
+  top: 16vw;
+  left: 10vw;
+  color: #fff;
+  font-size: 5vw;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.intro .awards {
+  position: absolute;
+  top: 23vw;
+  left: 10vw;
+  color: #fff;
+  display: block;
+}
+
+.intro .awards dl {
+  display: flex;
+  margin: 0.4rem;
+  align-items: baseline;
+}
+
+.intro .awards dt {
+  display: block;
+  text-align: center;
+  background-color: #2f2c29;
+  border-radius: 50px;
+  padding: 0.7rem;
+  word-break: keep-all;
+  font-size: 1.3vw;
+  width: 5vw;
+}
+
+.intro .awards dd {
+  font-size: 3vw;
+  display: block;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  width: 560px;
+  line-height: 2;
+}
+
+.intro .sub_visual_scroll {
+  width: 7rem;
+  height: 4rem;
+  font-size: 1rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: translate(-50%, 0);
+}
+
+.intro .sub_visual_scroll::before {
+  position: absolute;
+  background-color: #136f5a;
+  box-shadow: 0px 18px 27px 0px rgba(10, 39, 33, 0.43) inset;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 200%;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.intro .sub_visual_scroll span {
+  color: #fff;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-family: var(--font-Pretendard);
+  font-weight: 700;
+}
+
+.intro .pencile {
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 100vh;
+  z-index: 0;
+}
+
+.intro .award {
+  width: 30%;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+}
+
+.intro .award_bg1 {
+  width: 30%;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+}
+
+/***** section *****/
+.content {
+  background: url(../assets/images/story-bg.jpg) repeat;
+  background-size: cover;
+}
+
+.content .story h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  margin: 0;
+  font-family: var(--font-puradak);
+  font-weight: 600;
+}
+
+.content .story h4 {
+  font-size: 2.5rem;
+  margin-left: 20vw;
+  font-family: var(--font-PyeongChang);
+  font-weight: bold;
+}
+
+.content .story figure .sub_img {
+  width: 65%;
+  height: 40vw;
+  border-radius: 3%;
+  margin-left: 19vw;
+  margin-bottom: 30px;
+}
+
+.content .story .gupo_story {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding: 3px;
+  margin-left: 18vw;
+  display: block;
+  margin-right: 16vw;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story h5 {
+  padding-top: 3vw;
+  margin-left: 18vw;
+  font-family: var(--font-PyeongChang);
+  font-size: 19px;
+}
+
+.content .story .confirm {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-left: 18vw;
+  color: #999;
+}
+
+.content .story .awardspeech {
+  font-size: 1.5rem;
+  position: relative;
+  right: -18vw;
+  width: 100px;
+}
+
+.content .story .dot {
+  border-top: 2px dotted #000;
+  display: flex;
+  margin-left: 18vw;
+  margin-right: 15vw;
+}
+
+.content .story .gupo_pic .sub_imgH {
+  position: relative;
+  left: 17.5vw;
+  width: 13vw;
+  border-radius: 15px 15px;
+}
+
+.content .story .review .name {
+  position: relative;
+  top: -13vw;
+  left: 32vw;
+  width: 50px;
+}
+
+.content .story .review .name i {
+  font-size: 1rem;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  position: relative;
+  top: 13px;
+}
+
+.content .story .review .name h3 {
+  width: 100px;
+  margin: 0;
+  font-size: 1.2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story .review p {
+  color: #666;
+  font-size: 1vw;
+  margin-top: 1.2rem;
+  padding: 5px;
+  line-height: 1.5;
+  width: 50vw;
+  position: relative;
+  top: -13vw;
+  left: 32.5vw;
+}
+
+.content .story2 h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  margin: 0;
+  font-family: var(--font-puradak);
+  font-weight: 600;
+}
+
+.content .story2 h4 {
+  font-size: 2.5rem;
+  margin-left: 20vw;
+  font-family: var(--font-PyeongChang);
+  font-weight: bold;
+}
+
+.content .story2 figure .sub_img {
+  width: 65%;
+  height: 40vw;
+  border-radius: 3%;
+  margin-left: 19vw;
+  margin-bottom: 30px;
+}
+
+.content .story2 .gupo_story {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding: 3px;
+  margin-left: 18vw;
+  display: block;
+  margin-right: 16vw;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story2 h5 {
+  padding-top: 3vw;
+  margin-left: 18vw;
+  font-family: var(--font-PyeongChang);
+  font-size: 19px;
+}
+
+.content .story2 .confirm {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-left: 18vw;
+  color: #999;
+}
+
+.content .story2 .awardspeech {
+  font-size: 1.5rem;
+  position: relative;
+  right: -18vw;
+  width: 100px;
+}
+
+.content .story2 .dot {
+  border-top: 2px dotted #000;
+  display: flex;
+  margin-left: 18vw;
+  margin-right: 15vw;
+}
+
+.content .story2 .gupo_pic .sub_imgH {
+  position: relative;
+  left: 17.5vw;
+  width: 13vw;
+  border-radius: 15px 15px;
+}
+
+.content .story2 .review .name {
+  position: relative;
+  top: -13vw;
+  left: 32vw;
+  width: 50px;
+}
+
+.content .story2 .review .name i {
+  font-size: 1rem;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  position: relative;
+  top: 13px;
+}
+
+.content .story2 .review .name h3 {
+  width: 100px;
+  margin: 0;
+  font-size: 1.2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story2 .review p {
+  color: #666;
+  font-size: 1vw;
+  margin-top: 1.2rem;
+  padding: 5px;
+  line-height: 1.5;
+  width: 50vw;
+  position: relative;
+  top: -13vw;
+  left: 32.5vw;
+}
+
+.content .story3 h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  margin: 0;
+  font-family: var(--font-puradak);
+  font-weight: 600;
+}
+
+.content .story3 h4 {
+  font-size: 2.5rem;
+  margin-left: 20vw;
+  font-family: var(--font-PyeongChang);
+  font-weight: bold;
+}
+
+.content .story3 figure .sub_img {
+  width: 65%;
+  height: 40vw;
+  border-radius: 3%;
+  margin-left: 19vw;
+  margin-bottom: 30px;
+}
+
+.content .story3 .gupo_story {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding: 3px;
+  margin-left: 18vw;
+  display: block;
+  margin-right: 16vw;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story3 h5 {
+  padding-top: 3vw;
+  margin-left: 18vw;
+  font-family: var(--font-PyeongChang);
+  font-size: 19px;
+}
+
+.content .story3 .confirm {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-left: 18vw;
+  color: #999;
+}
+
+.content .story3 .awardspeech {
+  font-size: 1.5rem;
+  position: relative;
+  right: -18vw;
+  width: 100px;
+}
+
+.content .story3 .dot {
+  border-top: 2px dotted #000;
+  display: flex;
+  margin-left: 18vw;
+  margin-right: 15vw;
+}
+
+.content .story3 .gupo_pic .sub_imgH {
+  position: relative;
+  left: 17.5vw;
+  width: 13vw;
+  border-radius: 15px 15px;
+}
+
+.content .story3 .review .name {
+  position: relative;
+  top: -13vw;
+  left: 32vw;
+  width: 50px;
+}
+
+.content .story3 .review .name i {
+  font-size: 1rem;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  position: relative;
+  top: 13px;
+}
+
+.content .story3 .review .name h3 {
+  width: 100px;
+  margin: 0;
+  font-size: 1.2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: var(--font-PyeongChang);
+}
+
+.content .story3 .review p {
+  color: #666;
+  font-size: 1vw;
+  margin-top: 1.2rem;
+  padding: 5px;
+  line-height: 1.5;
+  width: 50vw;
+  position: relative;
+  top: -13vw;
+  left: 32.5vw;
+}
+
+.content .story3 .review .cloud {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.content .story3 .review .cloud .before .cloud_btnB li {
+  display: inline-block;
+  width: 100px; /* 원하는 너비 조절 */
+  height: 60px; /* 원하는 높이 조절 */
+  border-radius: 100px; /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin-left: -1rem;
+}
+
+.content .story3 .review .cloud .before .cloud_btnB li::before,
+.content .story3 .review .cloud .before .cloud_btnB li::after {
+  content: "";
+  width: 3rem; /* 구름의 일부분 너비 조절 */
+  height: 3rem; /* 구름의 일부분 높이 조절 */
+  background-color: #cfcfcf; /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.content .story3 .review .cloud .before .cloud_btnB li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 20rem; /* 위쪽 구름 부분 위치 조절 */
+  top: -6rem;
+}
+
+.content .story3 .review .cloud .before .cloud_btnB li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 18.5rem; /* 위쪽 구름 부분 위치 조절 */
+  top: -6rem;
+}
+
+.content .story3 .review .cloud .before p {
+  position: relative;
+  top: -8.4rem;
+  left: 20.5rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 8rem;
+  font-weight: 700;
+  font-family: var(--font-PyeongChang);
+  font-size: 1rem;
+}
+
+.content .story3 .review .cloud .before .allow_be {
+  width: 40px;
+  position: relative;
+  top: -10.3rem;
+  left: 18rem;
+}
+
+.content .story3 .review .cloud .before:hover li::after,
+.content .story3 .review .cloud .before:hover li::before {
+  background-color: #1da05a;
+  transition: 0.3s ease;
+}
+
+.content .story3 .review .cloud .after .cloud_btnF li {
+  display: inline-block;
+  height: 60px; /* 원하는 높이 조절 */
+  border-radius: 100px; /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -1rem;
+}
+
+.content .story3 .review .cloud .after .cloud_btnF li::before,
+.content .story3 .review .cloud .after .cloud_btnF li::after {
+  content: "";
+  width: 3rem; /* 구름의 일부분 너비 조절 */
+  height: 3rem; /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e; /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.content .story3 .review .cloud .after .cloud_btnF li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: -13rem; /* 위쪽 구름 부분 위치 조절 */
+  top: -6rem;
+}
+
+.content .story3 .review .cloud .after .cloud_btnF li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: -18rem; /* 위쪽 구름 부분 위치 조절 */
+  top: -6rem;
+}
+
+.content .story3 .review .cloud .after p {
+  position: relative;
+  top: -9.7rem;
+  left: -22rem;
+  color: #fff;
+  cursor: pointer;
+  width: 8rem;
+  font-weight: 700;
+  font-family: var(--font-PyeongChang);
+  font-size: 1rem;
+}
+
+.content .story3 .review .cloud .after .allow_af {
+  width: 40px;
+  position: relative;
+  top: -11.5rem;
+  left: -14rem;
+}
+
+.content .story3 .review .cloud .after:hover li::after,
+.content .story3 .review .cloud .after:hover li::before {
+  background-color: #1da05a;
+  transition: 0.3s ease;
+}
+
+/* footer */
+.btn_top {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 23rem;
+  right: 1.5rem;
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_top img {
+  padding: 10px;
+  width: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.foot {
+  background-color: #111;
+  padding-top: 1px;
+  font-family: var(--font-PyeongChang);
+}
+
+.foot span,
+.foot h2 {
+  color: #fff;
+  position: relative;
+  top: 70px;
+  padding-left: 7rem;
+}
+
+.foot span {
+  font-size: 2.1rem;
+}
+
+.foot h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.foot_cloud {
+  display: flex;
+  left: 50px;
+  flex-direction: column;
+}
+
+.foot_green {
+  padding-left: 90vw;
+}
+
+.foot_green li {
+  display: inline-block;
+  height: 50px;
+  /* 원하는 높이 조절 */
+  border-radius: 100px;
+  /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -13px;
+}
+
+.foot_green li::before,
+.foot_green li::after {
+  content: "";
+  width: 40px;
+  /* 구름의 일부분 너비 조절 */
+  height: 40px;
+  /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e;
+  /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.foot_green li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 50px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.foot_green li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 70px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.green p {
+  position: relative;
+  bottom: 57px;
+  padding-left: 90.4vw;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.foot_info_address {
+  position: relative;
+  bottom: 40px;
+  margin: 1rem 0;
+  color: #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 60px;
+  padding-right: 4.3vw;
+  text-align: right;
+}
+
+.foot_info_address p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer_copy {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_copy a {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.8vw;
+  left: 85vw;
+  font-weight: 600;
+}
+
+.footer_copy p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  opacity: 0.5;
+  padding-left: 5.7vw;
+}

@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+.data_an {
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+[data-an='updown'] {
+  animation-name: updown;
+}
+[data-an='updown2'] {
+  animation-name: updown2;
+}
+[data-an='updown3'] {
+  animation-name: updown3;
+}
+[data-an='updown4'] {
+  animation-name: updown4;
+}
+[data-an='moveLeft'] {
+  animation-name: moveLeft;
+}
+[data-an='moveRight'] {
+  animation-name: moveRight;
+}
+[data_an='wave'] {
+  animation-name: wave;
+}
+
+[data-ani='updown-low'] {
+  animation-name: updown-low;
+  animation-duration: 1s;
+}
+
+[data-ani='flag'] {
+  animation-name: flag;
+}
+[data-ani='flag-inverse'] {
+  animation-name: flag-inverse;
+}
+
+[data-ani='scale-small'] {
+  animation-name: scale-small;
+}
+[data-ani='scale-motion'] {
+  animation-name: scale-motion;
+  animation-duration: 1.5s;
+}
+[data-ani='scale-word'] {
+  animation-name: scale-word;
+  animation-direction: inherit;
+}
+
+[data-ani='shaking-text'] {
+  animation-name: shaking-text;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes updown2 {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes updown3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+@keyframes updown4 {
+  0% {
+    transform: translate(-30rem, -10rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes updown-low {
+  0% {
+    transform: translateY(-15rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes scale-word {
+  0%,
+  73% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  10%,
+  40% {
+    transform: scale(1.4);
+  }
+}
+@keyframes scale-small {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-motion {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30rem);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30rem);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes shaking-text {
+  0% {
+    transform: rotate(0.5deg);
+  }
+  20% {
+    transform: rotate(-0.5deg);
+  }
+}
+@keyframes flag {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes flag-inverse {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes height100 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(-1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes moveRightUp {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(30px, -30px);
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

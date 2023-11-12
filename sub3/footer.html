@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- common -->
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <!-- font -->
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <!-- pc -->
+  <link rel="stylesheet" href="./assets/css/footerpc.css" media="(width >= 1200px)">
+  <title>footer</title>
+  <style>
+    /***** footer *****/
+    .btn_top {
+      position: absolute;
+      opacity: 1;
+      visibility: visible;
+      top: 143rem;
+      right: 1.5rem;
+      z-index: 999;
+    }
+
+    .btn_top img {
+      width: 2rem;
+      transform: rotate(-90deg);
+      opacity: 0.3;
+      border-radius: 100%;
+      border: 3px solid #ccc;
+    }
+
+    .foot {
+      background-color: #111;
+      padding-top: 35px;
+    }
+
+    .foot span,
+    .foot h2 {
+      color: #fff;
+    }
+
+    .foot span {
+      font-size: 16px;
+    }
+
+    .foot h2 {
+      font-size: 22px;
+      padding: 10px;
+    }
+
+    .foot_cloud {
+      display: flex;
+      left: 50px;
+      flex-direction: column;
+    }
+
+    .foot_green li {
+      display: inline-block;
+      height: 50px;
+      /* 원하는 높이 조절 */
+      border-radius: 100px;
+      /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+      position: relative;
+      margin: -10px;
+    }
+
+    .foot_green li::before,
+    .foot_green li::after {
+      content: "";
+      width: 25px;
+      /* 구름의 일부분 너비 조절 */
+      height: 25px;
+      /* 구름의 일부분 높이 조절 */
+      background-color: #20ca6e;
+      /* 구름의 색상을 조절 */
+      position: absolute;
+      border-radius: 100px;
+    }
+
+    .foot_green li::before {
+      /* 위쪽 구름 부분 위치 조절 */
+      left: 45px;
+      /* 위쪽 구름 부분 위치 조절 */
+      top: 20px;
+    }
+
+    .foot_green li::after {
+      /* 위쪽 구름 부분 위치 조절 */
+      left: 60px;
+      /* 위쪽 구름 부분 위치 조절 */
+      top: 20px;
+    }
+
+    .green p {
+      position: relative;
+      bottom: 16px;
+      padding-left: 17px;
+      color: #ffffff;
+      font-weight: bold;
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    .foot_info_address {
+      margin: 1rem 0;
+      color: #fff;
+      opacity: 0.5;
+      display: block;
+      font-size: 12px;
+      margin-bottom: 60px;
+    }
+
+    .foot_info_address p {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+
+    .footer_copy {
+      padding-top: 20px;
+      font-size: 12px;
+      color: #fff;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer_copy a {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+
+    .footer_copy p {
+      font-size: 13px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- footer -->
+  <footer class="foot">
+    <a href="#wrap" class="btn_top"><img src="./assets/common_images/ic-arrow.svg" alt="allow_up"></a>
+    <div class="info">
+      <span>제 10회 부산스토리텔링축제</span>
+      <h2>북구 늴리리</h2>
+      <div class="foot_cloud">
+        <div class="green">
+          <a href="#">
+            <ul class="foot_green">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </a>
+          <p>customer</p>
+        </div>
+        <div class="foot_info_address">
+          <p class="address">A. 부산광역시 연제구 중앙대로 1217 국제문화센터 7층</p>
+          <p class="num">T. 051-505-2030</p>
+          <p class="email">E. bsstory@storybusan.com</p>
+        </div>
+        <div class="footer_copy">
+          <a href="http://busanstory.koweb.co.kr/contents/10_privacy/sub01.html " title="개인정보">개인정보처리방침</a>
+          <a href="http://busanstory.koweb.co.kr/contents/10_privacy/sub02.html" title="이용약관">이용약관</a>
+          <p>Copyright ⓒ 부산스토리텔링협의회. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

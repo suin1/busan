@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* footer */
+.btn_top {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  top: 195em;
+  right: 1.5rem;
+  z-index: 999;
+}
+
+.btn_top img {
+  width: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.foot {
+  background-color: #111;
+  padding-top: 1px;
+  font-family: var(--font-PyeongChang);
+}
+
+.foot span,
+.foot h2 {
+  color: #fff;
+  position: relative;
+  top: 70px;
+  padding-left: 7rem;
+}
+
+.foot span {
+  font-size: 2.1rem;
+}
+
+.foot h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.foot_cloud {
+  display: flex;
+  left: 50px;
+  flex-direction: column;
+}
+
+.foot_green {
+  padding-left: 90vw;
+}
+
+.foot_green li {
+  display: inline-block;
+  height: 50px;
+  /* 원하는 높이 조절 */
+  border-radius: 100px;
+  /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -13px;
+}
+
+.foot_green li::before,
+.foot_green li::after {
+  content: "";
+  width: 40px;
+  /* 구름의 일부분 너비 조절 */
+  height: 40px;
+  /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e;
+  /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.foot_green li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 50px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.foot_green li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 70px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.green p {
+  position: relative;
+  bottom: 57px;
+  padding-left: 90.4vw;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.foot_info_address {
+  position: relative;
+  bottom: 40px;
+  margin: 1rem 0;
+  color: #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 60px;
+  padding-right: 4.3vw;
+  text-align: right;
+}
+
+.foot_info_address p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer_copy {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_copy a {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.8vw;
+  left: 85vw;
+  font-weight: 600;
+}
+
+.footer_copy p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  opacity: 0.5;
+  padding-left: 5.7vw;
+}

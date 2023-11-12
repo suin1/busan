@@ -1,0 +1,1034 @@
+@charset "utf-8";
+/***** header *****/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  position: absolute;
+}
+
+.wrap img {
+  width: 15vw;
+  margin: 2vw;
+  margin-left: 5vw;
+}
+
+.head .wrap #icon + label,
+.head .wrap #wrap p,
+.big_menu .story_menu_down .arrow,
+#icon {
+  display: none;
+}
+
+.head #wrap {
+  position: absolute;
+  left: 50%;
+}
+
+#icon + label + #wrap {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  transition: none;
+  top: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.head .wrap #wrap .login {
+  background: transparent;
+  font-size: 0.6vw;
+  text-align: center;
+  padding: 0.5vw;
+  width: 50px;
+  margin: 0;
+  color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 30px 30px;
+  font-family: var(--font-Pretendard);
+  position: absolute;
+  left: 82vw;
+  top: 2vw;
+}
+
+.head .wrap #wrap .big_menu {
+  margin-top: 10px;
+  background: transparent;
+  padding: 0;
+  border: none;
+  height: 8vh;
+  display: flex;
+  width: 60vw;
+  position: absolute;
+  left: 25vw;
+  top: 0.5vw;
+}
+
+.head .wrap #wrap .big_menu li {
+  margin-bottom: 10px;
+  padding: 1.3vw;
+  height: 3vw;
+  width: 12vw;
+  border: none;
+}
+
+.head .wrap #wrap .big_menu li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  font-size: 1vw;
+  font-family: var(--font-Pretendard);
+}
+
+.head .wrap #wrap .big_menu .story_menu_down .arrow {
+  width: 3%;
+  transform: translate(0, -50%) rotate(90deg);
+  position: relative;
+  left: 50vw;
+  bottom: 4vw;
+  opacity: 0; /* 모바일 버전에서 숨기도록 opacity 0 유지 */
+  transition: opacity 0.3s ease;
+}
+
+.head .wrap #wrap .big_menu .sub_menu {
+  opacity: 0; /* 모바일 버전에서 숨기도록 opacity 0 유지 */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  left: 46vw;
+  top: 60px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px 20px;
+  height: 9vw;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li {
+  margin: 0;
+  width: 7vw;
+  height: 1vw;
+  padding: 1vw;
+  border-bottom: 1px solid #ddd;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li:last-child {
+  border: none;
+}
+
+.head .wrap #wrap .big_menu .sub_menu li a {
+  color: #000;
+  font-size: 1vw;
+  padding-right: 1.1vw;
+  border: none;
+  padding-left: 20px;
+}
+/* main */
+.main_content {
+  background: url(../assets/images/festival-visual-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_content .main_txt {
+  color: #fff;
+  margin: 70px 50px;
+  font-family: var(--font-PyeongChang);
+  position: absolute;
+  left: 8%;
+}
+.main_content .main_txt p:nth-child(1) {
+  margin-bottom: 10px;
+  text-indent: -5px;
+  font-size: 1.9rem;
+}
+.main_content .main_txt h2 {
+  font-size: 5.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main_content .main_txt .fes {
+  border: 3px solid #000;
+  border-radius: 50px;
+  padding: 15px;
+  width: 350px;
+  margin-top: 30px;
+  background-color: #111;
+  font-weight: bold;
+  text-align: center;
+}
+.main_content .main_txt span {
+  color: #aaa;
+  padding: 14px;
+  font-size: 1.4rem;
+}
+.main_content .main_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main_content .main_img img:first-child {
+  width: 10vw;
+  position: absolute;
+  top: 25%;
+  right: 34%;
+  animation-name: updown;
+  animation-duration: 1.5s;
+}
+.main_content .main_img img:nth-child(2) {
+  width: 3vw;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+  animation-name: updown2;
+}
+.main_content .main_img img:nth-child(3) {
+  width: 18vw;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  animation-name: updown3;
+}
+.main_content .main_img img:nth-child(4) {
+  width: 130px;
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  z-index: 55;
+  animation-name: updown2;
+  animation-duration: 2s;
+}
+.main_content .main_img img:nth-child(5) {
+  width: 10px;
+  position: absolute;
+  right: 41%;
+  top: 45%;
+  animation-name: updown2;
+}
+.main_content .main_img img:nth-child(6) {
+  width: 15px;
+  position: absolute;
+  right: 26%;
+  top: 50%;
+  animation-name: updown2;
+  animation-duration: 2.5s;
+}
+.main_content .main_img img:nth-child(7) {
+  width: 1vw;
+  position: absolute;
+  right: 30%;
+  top: 37%;
+  animation-name: updown2;
+  animation-duration: 2.2s;
+}
+.main_content .main_img img:nth-child(8) {
+  width: 1vw;
+  position: absolute;
+  right: 20%;
+  top: 55%;
+  z-index: 66;
+  animation-name: updown2;
+  animation-duration: 1.3s;
+}
+.main_content .main_img img:nth-child(9) {
+  width: 5vw;
+  position: absolute;
+  right: 43%;
+  top: 40%;
+  animation: pop 2s ease-in-out infinite alternate;
+}
+.main_content .main_img img:nth-child(10) {
+  width: 2vw;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  animation: pop 2s ease-in-out infinite alternate;
+}
+.main_content .main_img img:last-child {
+  width: 36vw;
+  position: absolute;
+  top: 50%;
+  right: 13%;
+  bottom: 10%;
+  z-index: 10;
+}
+
+/* welcome */
+.welcome {
+  padding: 100px 0;
+  position: relative;
+}
+.welcome .welcome_txt {
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+  font-family: var(--font-Pretendard);
+  padding: 30px;
+}
+.welcome .welcome_txt h2 {
+  font-family: var(--font-PyeongChang);
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.welcome .welcome_txt strong {
+  color: var(--color-violet);
+}
+.welcome .welcome_txt .sin {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.welcome .welcome_txt p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+.welcome .welcome_txt p span {
+  color: var(--main-green);
+  font-weight: 700;
+}
+.welcome .welcome_txt img:nth-child(4) {
+  position: absolute;
+  width: 80px;
+  top: 13%;
+  left: 26%;
+  animation: heart 1.5s linear infinite alternate;
+}
+.welcome .welcome_txt img:nth-child(5) {
+  position: absolute;
+  width: 140px;
+  top: 30%;
+  right: 15%;
+  animation: heart 1.5s linear infinite alternate;
+}
+.welcome .welcome_txt img:nth-child(6) {
+  position: absolute;
+  width: 80px;
+  left: 20%;
+  top: 70%;
+  animation: heart 1.5s linear infinite alternate;
+}
+
+/* hero */
+.hero {
+  background-color: #dceaf7;
+  height: 120vh;
+  padding: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero_wrap .hero_txt {
+  font-family: var(--font-Pretendard);
+  margin-top: 40px;
+  order: 3;
+  width: 90%;
+}
+.hero_title {
+  color: #99aab9;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: var(--font-PyeongChang);
+}
+.hero_title h2 {
+  text-align: left;
+  font-size: 3rem;
+}
+.hero_title h2 strong {
+  color: var(--color-violet);
+}
+.hero_txt {
+  font-family: var(--font-Pretendard);
+  margin-top: 40px;
+  /* order: 3; */
+  grid-row-start: 1;
+  margin: 0;
+}
+.hero_txt p {
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+/* .hero_txt > p::before {
+  content: '';
+  width: 5px;
+  height: 25px;
+  border: 1px solid red;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  box-sizing: border-box;
+  border-width: 0 0 4px 4px;
+  position: absolute;
+} */
+
+.hero_program {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 37vw;
+}
+.hero_program .hero_item:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+}
+
+.hero_program .hero_item {
+  width: 100%;
+}
+.hero_wrap .hero_txt .hero_program .hero_item a {
+  padding: 20px 20px 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.hero_program .hero_item a img {
+  width: 60px;
+  margin-bottom: 20px;
+  margin-right: 45px;
+}
+.hero_program .hero_item a dl {
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.hero_program .hero_item a dl dt {
+  font-weight: 600;
+  font-family: var(--font-PyeongChang);
+  font-size: 1.3rem;
+}
+.hero_program .hero_item a dl dd {
+  font-weight: 300;
+  color: #444;
+}
+.hero_program .hero_item .btn_circle {
+  background-color: #ddd;
+}
+.map_all {
+  overflow: hidden;
+  position: relative;
+  grid-column: 2;
+  width: 100%;
+}
+.map_all .map_img {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.map_all .map_img img {
+  width: 100%;
+}
+.hero .hero_wrap .map_all .map_info {
+  position: absolute;
+  top: 35%;
+  right: 40%;
+}
+.hero .hero_wrap .map_all .map_info img {
+  width: 30px;
+  margin-bottom: 20px;
+  animation-name: updown2;
+  animation-duration: 1s;
+}
+.hero .hero_wrap .map_all .map_info p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: var(--font-PyeongChang);
+}
+/* event */
+.event {
+  padding: 140px 0;
+  text-align: center;
+  font-family: var(--font-PyeongChang);
+}
+.event_all {
+  position: relative;
+}
+.event_all h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.event_all h2 strong {
+  color: var(--color-violet);
+  font-weight: bold;
+}
+/* .event_all h2::before {
+  position: absolute;
+  right: 12%;
+  top: -10%;
+  width: 40px;
+  height: 20px;
+  padding: 11px;
+  content: '';
+  background: url(../images/ic-festival-star.png) no-repeat center / contain;
+} */
+.event .event_all > img {
+  position: absolute;
+  top: -10%;
+  left: 58%;
+  object-fit: cover;
+  animation: moveRightUp 1.5s ease-in-out infinite;
+}
+
+.event_all p {
+  margin-top: 20px;
+  position: relative;
+}
+.event_all p span {
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+  background-color: var(--color-violet);
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.event_all p span::before {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  content: "";
+  width: 30px;
+  height: 10px;
+  margin-top: -10px;
+  background-color: var(--color-violet);
+  transform: translate(-50%, 0) rotate(45deg);
+}
+.event_all p span img {
+  position: absolute;
+  left: -40%;
+  width: 120px;
+}
+
+.event_cloud {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.event_btn li {
+  display: inline-block;
+  width: 100px; /* 원하는 너비 조절 */
+  height: 60px; /* 원하는 높이 조절 */
+  border-radius: 100px; /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  bottom: -50px;
+  right: -20px;
+  margin: -36px;
+  padding: 10px;
+}
+
+.event_btn li::before,
+.event_btn li::after {
+  content: "";
+  width: 40px; /* 구름의 일부분 너비 조절 */
+  height: 40px; /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e; /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.event_btn li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 40px; /* 위쪽 구름 부분 위치 조절 */
+}
+
+.event_btn li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 75px; /* 위쪽 구름 부분 위치 조절 */
+}
+
+.event_cloud p {
+  position: relative;
+  bottom: -40px;
+  right: 70px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.event_cloud:hover li::after,
+.event_cloud:hover li::before {
+  background-color: #1da05a;
+  transition: 0.3s ease;
+}
+/* login */
+.login {
+  background-color: #110c2a;
+  color: #fff;
+  text-align: center;
+  padding: 100px 100px;
+  font-family: var(--font-PyeongChang);
+  display: block;
+}
+.login_jam {
+  position: relative;
+  right: 18%;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #ee3a36;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 30px;
+  font-family: var(--font-PyeongChang);
+  font-weight: 600;
+  font-size: 1.2rem;
+  /* animation: moveUpDown 2s infinite; */
+  transform: rotate(-80deg);
+}
+
+.login_jam::before {
+  content: "";
+  position: absolute;
+  top: 115%;
+  right: 40%;
+  margin-top: -15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #ee3a36 transparent transparent;
+  transform: rotate(275deg);
+}
+.login_txt h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.login_txt br {
+  display: block;
+}
+.login_txt p {
+  font-family: var(--font-Pretendard);
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.login_txt p:nth-child(2) {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.login_txt p:nth-child(3) {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.login_wrap {
+  font-weight: 600;
+}
+.login_poster {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.login_poster img {
+  width: 100%;
+  vertical-align: top;
+}
+.login_poster em {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 20px 10px 10px;
+  color: #aaaaaa;
+}
+.login_poster p {
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.and_txt {
+  padding: 60px 0;
+}
+.and_txt em {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.and_txt h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.poster_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster_bg {
+  position: absolute;
+  font-size: 1.5rem;
+}
+.poster_bg p {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* .poster_img img:nth-child(1) {
+  width: 10%;
+  margin-right: 40px;
+}
+.poster_img img:nth-child(2) {
+  width: 60%;
+  border: 0;
+}
+.poster_img img:nth-child(3) {
+  width: 10%;
+  margin-left: 40px;
+} */
+
+.left,
+.right {
+  width: 10vw;
+}
+
+.left {
+  margin-right: 40px;
+}
+
+.right {
+  margin-left: 40px;
+}
+
+.poster11 {
+  width: 30vw;
+}
+
+.poster_bg {
+  top: 11050px;
+  left: 30px;
+}
+
+.poster_bg p {
+  top: 10px;
+  font-size: 2.4rem;
+}
+
+/* happy */
+.happy {
+  padding: 100px 20px;
+  font-family: var(--font-PyeongChang);
+  text-align: center;
+}
+
+.happy_txt h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  box-sizing: border-box;
+  display: block;
+}
+.happy_txt p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+}
+.company_list img {
+  width: 100%;
+}
+.company_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* footer */
+.btn_top {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  top: 195em;
+  right: 1.5rem;
+  z-index: 999;
+}
+
+.btn_top img {
+  width: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.foot {
+  background-color: #111;
+  padding-top: 1px;
+  font-family: var(--font-PyeongChang);
+}
+
+.foot span,
+.foot h2 {
+  color: #fff;
+  position: relative;
+  top: 70px;
+  padding-left: 7rem;
+}
+
+.foot span {
+  font-size: 2.1rem;
+}
+
+.foot h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.foot_cloud {
+  display: flex;
+  left: 50px;
+  flex-direction: column;
+}
+
+.foot_green {
+  padding-left: 90vw;
+}
+
+.foot_green li {
+  display: inline-block;
+  height: 50px;
+  /* 원하는 높이 조절 */
+  border-radius: 100px;
+  /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -13px;
+}
+
+.foot_green li::before,
+.foot_green li::after {
+  content: "";
+  width: 40px;
+  /* 구름의 일부분 너비 조절 */
+  height: 40px;
+  /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e;
+  /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.foot_green li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 50px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.foot_green li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 70px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.green p {
+  position: relative;
+  bottom: 57px;
+  padding-left: 90.9vw;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.foot_info_address {
+  position: relative;
+  bottom: 40px;
+  margin: 1rem 0;
+  color: #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 60px;
+  padding-right: 4.3vw;
+  text-align: right;
+}
+
+.foot_info_address p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer_copy {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_copy a {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.8vw;
+  left: 85vw;
+  font-weight: 600;
+}
+
+.footer_copy p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  opacity: 0.5;
+  padding-left: 5.7vw;
+}
+
+/* footer */
+.btn_top {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 23rem;
+  right: 1.5rem;
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_top img {
+  padding: 10px;
+  width: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.foot {
+  background-color: #111;
+  padding-top: 1px;
+  font-family: var(--font-PyeongChang);
+}
+
+.foot span,
+.foot h2 {
+  color: #fff;
+  position: relative;
+  top: 70px;
+  padding-left: 7rem;
+}
+
+.foot span {
+  font-size: 2.1rem;
+}
+
+.foot h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.foot_cloud {
+  display: flex;
+  left: 50px;
+  flex-direction: column;
+}
+
+.foot_green {
+  padding-left: 90vw;
+}
+
+.foot_green li {
+  display: inline-block;
+  height: 50px;
+  /* 원하는 높이 조절 */
+  border-radius: 100px;
+  /* 원 모양의 구름을 만들기 위해 반지름 설정 */
+  position: relative;
+  margin: -13px;
+}
+
+.foot_green li::before,
+.foot_green li::after {
+  content: "";
+  width: 40px;
+  /* 구름의 일부분 너비 조절 */
+  height: 40px;
+  /* 구름의 일부분 높이 조절 */
+  background-color: #20ca6e;
+  /* 구름의 색상을 조절 */
+  position: absolute;
+  border-radius: 100px;
+}
+
+.foot_green li::before {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 50px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.foot_green li::after {
+  /* 위쪽 구름 부분 위치 조절 */
+  left: 70px;
+  /* 위쪽 구름 부분 위치 조절 */
+  top: -30px;
+}
+
+.green p {
+  position: relative;
+  bottom: 57px;
+  padding-left: 90.4vw;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.foot_info_address {
+  position: relative;
+  bottom: 40px;
+  margin: 1rem 0;
+  color: #fff;
+  opacity: 0.5;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 60px;
+  padding-right: 4.3vw;
+  text-align: right;
+}
+
+.foot_info_address p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footer_copy {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_copy a {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.8vw;
+  left: 85vw;
+  font-weight: 600;
+}
+
+.footer_copy p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  opacity: 0.5;
+  padding-left: 5.7vw;
+}
