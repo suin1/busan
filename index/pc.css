@@ -1066,6 +1066,7 @@ body {
   font-size: 12px;
   color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
 }
 
 .footer_copy a {
