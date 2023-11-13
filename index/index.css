@@ -412,10 +412,10 @@ header {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  animation: moveRight 50s linear infinite;
+  animation: moveLeft 50s linear infinite;
 }
 .tool_box:last-child .tool p {
-  animation: moveLeft 50s linear infinite;
+  animation: moveRight 50s linear infinite;
 }
 
 /* ---- section bukgu ---- */
@@ -867,6 +867,7 @@ header {
 .foot span,
 .foot h2 {
   color: #fff;
+  font-weight: 600;
 }
 
 .foot span {
@@ -896,7 +897,7 @@ header {
 
 .foot_green li::before,
 .foot_green li::after {
-  content: "";
+  content: '';
   width: 25px;
   /* 구름의 일부분 너비 조절 */
   height: 25px;

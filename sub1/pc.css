@@ -323,7 +323,7 @@ body {
 /* hero */
 .hero {
   background-color: #dceaf7;
-  height: 120vh;
+  height: auto;
   padding: 70px;
   text-align: center;
   display: flex;
@@ -505,7 +505,7 @@ body {
   position: absolute;
   left: 50%;
   top: 20%;
-  content: "";
+  content: '';
   width: 30px;
   height: 10px;
   margin-top: -10px;
@@ -514,7 +514,7 @@ body {
 }
 .event_all p span img {
   position: absolute;
-  left: -40%;
+  left: -43%;
   width: 120px;
 }
 
@@ -538,7 +538,7 @@ body {
 
 .event_btn li::before,
 .event_btn li::after {
-  content: "";
+  content: '';
   width: 40px; /* 구름의 일부분 너비 조절 */
   height: 40px; /* 구름의 일부분 높이 조절 */
   background-color: #20ca6e; /* 구름의 색상을 조절 */
@@ -600,7 +600,7 @@ body {
 }
 
 .login_jam::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 115%;
   right: 40%;
@@ -815,7 +815,7 @@ body {
 
 .foot_green li::before,
 .foot_green li::after {
-  content: "";
+  content: '';
   width: 40px;
   /* 구름의 일부분 너비 조절 */
   height: 40px;
@@ -959,7 +959,7 @@ body {
 
 .foot_green li::before,
 .foot_green li::after {
-  content: "";
+  content: '';
   width: 40px;
   /* 구름의 일부분 너비 조절 */
   height: 40px;
