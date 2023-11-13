@@ -412,10 +412,10 @@ header {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  animation: moveLeft 50s linear infinite;
+  animation: moveRight 50s linear infinite;
 }
 .tool_box:last-child .tool p {
-  animation: moveRight 50s linear infinite;
+  animation: moveLeft 50s linear infinite;
 }
 
 /* ---- section bukgu ---- */
