@@ -1068,7 +1068,8 @@ td {
 .last {
   background: url(./images/content/explore/explore-bottom.jpg) no-repeat 100% / cover;
   padding: 16vw 0;
-  text-align: center;
+  text-align: center;position: relative;
+  z-index: 5;
 }
 
 .last p {
@@ -1149,7 +1150,7 @@ td {
 }
 
 /***** footer *****/
-.btn_top {
+.foot .btn_top {
   position: fixed;
   opacity: 0;
   visibility: hidden;
@@ -1159,12 +1160,13 @@ td {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.btn_top.show {
+.foot .btn_top.show {
   opacity: 1;
   visibility: visible;
+  z-index: 999;
 }
 
-.btn_top img {
+.foot .btn_top img {
   padding: 10px;
   width: 2rem;
   transform: rotate(-90deg);
