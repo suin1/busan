@@ -239,7 +239,7 @@ header {
   box-shadow: 0px 18px 27px 0px rgba(10, 39, 33, 0.43) inset;
   left: 0;
   top: 0;
-  content: "";
+  content: '';
   width: 100%;
   height: 200%;
   border-radius: 100%;
@@ -597,7 +597,7 @@ header {
 
 .content .story3 .review .cloud .before .cloud_btnB li::before,
 .content .story3 .review .cloud .before .cloud_btnB li::after {
-  content: "";
+  content: '';
   width: 40px; /* 구름의 일부분 너비 조절 */
   height: 40px; /* 구름의 일부분 높이 조절 */
   background-color: #cfcfcf; /* 구름의 색상을 조절 */
@@ -650,7 +650,7 @@ header {
 
 .content .story3 .review .cloud .after .cloud_btnF li::before,
 .content .story3 .review .cloud .after .cloud_btnF li::after {
-  content: "";
+  content: '';
   width: 40px; /* 구름의 일부분 너비 조절 */
   height: 40px; /* 구름의 일부분 높이 조절 */
   background-color: #20ca6e; /* 구름의 색상을 조절 */
@@ -726,6 +726,7 @@ header {
 .foot span,
 .foot h2 {
   color: #fff;
+  font-weight: 600;
 }
 
 .foot span {
@@ -755,7 +756,7 @@ header {
 
 .foot_green li::before,
 .foot_green li::after {
-  content: "";
+  content: '';
   width: 25px;
   /* 구름의 일부분 너비 조절 */
   height: 25px;
