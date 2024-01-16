@@ -2,7 +2,7 @@
 
 > Project site: [click🌐](https://ouch-chu.github.io/index/index/index.html)<br>
 > 프로젝트 완료보고서: [click🌐](https://www.notion.so/b24568dacfce496a8695ee9f9337eefd?pvs=4)<br>
-> 발표 PPT: [click🌐](<a href="./작업자료/project_report.pdf">)<br>
+> 발표 PPT: [click🌐](<a href="./작업자료/부산 스토리텔링 협의회.pptx">)<br>
 
 ## 1. 프로젝트 개요
 
